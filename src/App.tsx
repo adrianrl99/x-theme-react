@@ -1,7 +1,12 @@
-import Base from '@/components/Base/Base'
+import { SectionButtons, XBase } from '~/components'
+import { XThemeProvider } from '~/theme'
 
-function App() {
-  return <Base>app</Base>
+export default function App() {
+  return (
+    <XThemeProvider>
+      <XBase>
+        <SectionButtons />
+      </XBase>
+    </XThemeProvider>
+  )
 }
-
-export default App
