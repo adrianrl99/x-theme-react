@@ -12,7 +12,7 @@ const XBase = styled.div`
   ${props => props.theme.mixins.displayGrid()}
 
   ${props => props.theme.mixins.boxSizing('border-box')}
-  
+
   font-family: ${props => props.theme.font.family};
   text-rendering: optimizeLegibility;
   ${props => props.theme.mixins.fontVariantLigature('normal')}
