@@ -12,7 +12,9 @@ export interface ThemeMixins {
   alignItems: XThemeMixin
   boxShadow: XThemeMixin
   boxSizing: XThemeMixin
+  displayFlex: XThemeMixin
   displayGrid: XThemeMixin
+  flexDirection: XThemeMixin
   fontVariantLigature: XThemeMixin
   justifyContent: XThemeMixin
   transform: XThemeMixin

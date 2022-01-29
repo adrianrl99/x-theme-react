@@ -1,17 +1,29 @@
-import { I18nextProvider } from 'react-i18next'
+import '~/utils/i18n'
 
-import { SectionButtons, XBase } from '~/components'
+import { Suspense } from 'react'
+
+import {
+  SectionButtons,
+  SectionMenus,
+  XBase,
+  XCenter,
+  XList,
+} from '~/components'
 import { XThemeProvider } from '~/theme'
-import i18n from '~/utils/i18n'
 
-export default function App() {
-  return (
-    <I18nextProvider i18n={i18n}>
-      <XThemeProvider>
-        <XBase>
-          <SectionButtons />
-        </XBase>
-      </XThemeProvider>
-    </I18nextProvider>
-  )
-}
+const App = () => (
+  <XThemeProvider>
+    <XBase>
+      <Suspense fallback="loading">
+        <XCenter>
+          <XList gap={10} direction="column">
+            <SectionButtons />
+            <SectionMenus />
+          </XList>
+        </XCenter>
+      </Suspense>
+    </XBase>
+  </XThemeProvider>
+)
+
+export default App

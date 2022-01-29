@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 
-import { XButtonProps } from '~/typing/x-button'
+import { XButtonProps } from '~/typing'
 
-const Button = styled.div<XButtonProps>`
+const XButton = styled.button<XButtonProps>`
   background-color: ${props =>
     props.color
       ? props.theme.color[props.color]
@@ -14,6 +14,7 @@ const Button = styled.div<XButtonProps>`
   border-radius: ${props => props.theme.functions.spacing([2])};
   font-size: ${props => props.theme.functions.spacing([4])};
   text-transform: uppercase;
+  text-align: center;
 
   ${props => props.theme.mixins.boxShadow(props.theme.functions.shadow(0))}
   ${props =>
@@ -51,4 +52,4 @@ const Button = styled.div<XButtonProps>`
   }
 `
 
-export default Button
+export default XButton

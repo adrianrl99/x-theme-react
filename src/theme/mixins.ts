@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 
-import type { ThemeMixins } from '~/typing/x-theme'
+import type { ThemeMixins } from '~/typing'
 
 export const mixins: ThemeMixins = {
   alignContent: args => css`
@@ -20,9 +20,34 @@ export const mixins: ThemeMixins = {
     -webkit-box-sizing: ${args};
     box-sizing: ${args};
   `,
+  displayFlex: () => css`
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  `,
   displayGrid: () => css`
     display: -ms-grid;
     display: grid;
+  `,
+  flexDirection: args => css`
+    -webkit-box-orient: ${!args
+      ? 'horizontal'
+      : args === 'inherit' || args === 'initial' || args === 'unset'
+      ? args
+      : args.startsWith('row')
+      ? 'horizontal'
+      : args.startsWith('column') || args === 'revert'
+      ? 'vertical'
+      : 'horizontal'};
+    -webkit-box-direction: ${!args
+      ? 'normal'
+      : args === 'inherit' || args === 'initial' || args === 'unset'
+      ? args
+      : args.endsWith('reverse')
+      ? 'reverse'
+      : 'normal'};
+    -ms-flex-direction: ${args};
+    flex-direction: ${args};
   `,
   fontVariantLigature: args => css`
     -webkit-font-variant-ligatures: ${args};

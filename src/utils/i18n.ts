@@ -5,6 +5,8 @@ import HttpBackend from 'i18next-http-backend'
 import LocalStorageBackend from 'i18next-localstorage-backend'
 import { initReactI18next } from 'react-i18next'
 
+import { IS_DEVELOPMENT } from './helper'
+
 export default i18n
   .use(initReactI18next)
   .use(ChainedBackend)
@@ -20,7 +22,7 @@ export default i18n
       backends: [LocalStorageBackend, HttpBackend],
       backendOptions: [
         {
-          expirationTime: 7 * 24 * 60 * 60 * 1000, // 7 days
+          expirationTime: IS_DEVELOPMENT ? 0 : 24 * 60 * 60 * 1000, // 1 days
         },
         {
           loadPath: '/locales/{{lng}}/{{ns}}.json',

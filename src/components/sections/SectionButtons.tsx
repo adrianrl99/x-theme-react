@@ -1,27 +1,21 @@
-import { Trans } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 
-import { XButton, XCenter, XGap } from '~/components'
+import { XButton, XCenter, XList } from '~/components'
 
-export default function SectionButtons() {
+const SectionButtons = () => {
+  const { t } = useTranslation()
+
   return (
     <XCenter>
-      <XGap all={2}>
-        <XButton>
-          <Trans i18nKey="button">button</Trans>
-        </XButton>
-        <XButton color="success">
-          <Trans i18nKey="button">button</Trans>
-        </XButton>
-        <XButton color="error">
-          <Trans i18nKey="button">button</Trans>
-        </XButton>
-        <XButton color="info">
-          <Trans i18nKey="button">button</Trans>
-        </XButton>
-        <XButton color="warning">
-          <Trans i18nKey="button">button</Trans>
-        </XButton>
-      </XGap>
+      <XList gap={2} direction="row">
+        <XButton>{t('button')}</XButton>
+        <XButton color="success">{t('button')}</XButton>
+        <XButton color="error">{t('button')}</XButton>
+        <XButton color="info">{t('button')}</XButton>
+        <XButton color="warning">{t('button')}</XButton>
+      </XList>
     </XCenter>
   )
 }
+
+export default SectionButtons
