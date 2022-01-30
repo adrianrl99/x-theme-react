@@ -9,7 +9,7 @@ import reset from './reset'
 import { darkTheme, lightTheme } from './theme'
 
 export default function XThemeProvider({ children }: XThemeProviderProps) {
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(true)
 
   return (
     <Provider theme={dark ? darkTheme : lightTheme}>

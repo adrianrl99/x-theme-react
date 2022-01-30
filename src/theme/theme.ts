@@ -1,16 +1,22 @@
 import { Theme } from '@emotion/react'
 
+import { XThemePalette } from '~/typing'
+
 import { functions } from './functions'
 import { mixins } from './mixins'
 
-const baseDarkPalette = {
+const baseDarkPalette: XThemePalette = {
+  background: '',
+  foreground: '',
   black: {
     normal: '#181a1f',
     bright: '#5c6370',
+    contrastText: '#abb2bf',
   },
   white: {
     normal: '#abb2bf',
     bright: '#ffffff',
+    contrastText: '#181a1f',
   },
   red: '#e06c75',
   green: '#98c379',
@@ -20,12 +26,8 @@ const baseDarkPalette = {
   cyan: '#56b6c2',
 }
 
-export const darkTheme: Theme = {
-  palette: {
-    ...baseDarkPalette,
-    background: baseDarkPalette.black.normal,
-    foreground: baseDarkPalette.white.normal,
-  },
+export const baseTheme: Theme = {
+  palette: baseDarkPalette,
   mixins,
   functions,
   font: {
@@ -39,4 +41,20 @@ export const darkTheme: Theme = {
   },
 }
 
-export const lightTheme: Theme = darkTheme
+export const darkTheme: Theme = {
+  ...baseTheme,
+  palette: {
+    ...baseTheme.palette,
+    background: baseDarkPalette.black.normal,
+    foreground: baseDarkPalette.white.normal,
+  },
+}
+
+export const lightTheme: Theme = {
+  ...baseTheme,
+  palette: {
+    ...baseTheme.palette,
+    background: baseDarkPalette.white.bright,
+    foreground: baseDarkPalette.black.normal,
+  },
+}

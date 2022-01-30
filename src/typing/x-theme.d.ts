@@ -37,6 +37,7 @@ export interface XThemeFont {
 export interface XThemePaletteVariants {
   normal: string
   bright: string
+  contrastText: string
 }
 
 export interface XThemePalette {

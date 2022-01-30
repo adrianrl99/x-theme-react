@@ -7,7 +7,7 @@ const XButton = styled.button<XButtonProps>`
     props.color
       ? props.theme.color[props.color]
       : props.theme.palette.white.normal};
-  color: ${props => props.theme.palette.black.normal};
+  color: ${props => props.theme.palette.white.contrastText};
 
   cursor: pointer;
   padding: ${props => props.theme.functions.spacing([2, 5])};
