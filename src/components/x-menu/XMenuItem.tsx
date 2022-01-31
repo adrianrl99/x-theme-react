@@ -8,6 +8,8 @@ const MenuItem = styled.div`
   cursor: pointer;
   position: relative;
   background-color: transparent;
+  text-transform: none;
+  height: auto;
 
   color: ${props => props.theme.palette.foreground};
   padding: ${props => props.theme.functions.spacing([3, 4])};

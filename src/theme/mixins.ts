@@ -68,4 +68,9 @@ export const mixins: ThemeMixins = {
     -o-transition: ${args};
     transition: ${args};
   `,
+  transitionProperty: args => css`
+    -webkit-transition-property: ${args};
+    -o-transition-property: ${args};
+    transition-property: ${args};
+  `,
 }

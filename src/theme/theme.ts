@@ -28,6 +28,10 @@ const baseDarkPalette: XThemePalette = {
 
 export const baseTheme: Theme = {
   palette: baseDarkPalette,
+  mode: 'dark',
+  changeMode: () => {
+    /* empty */
+  },
   mixins,
   functions,
   font: {
@@ -52,6 +56,7 @@ export const darkTheme: Theme = {
 
 export const lightTheme: Theme = {
   ...baseTheme,
+  mode: 'light',
   palette: {
     ...baseTheme.palette,
     background: baseDarkPalette.white.bright,

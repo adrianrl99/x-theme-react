@@ -3,6 +3,8 @@ import '@emotion/react'
 import type { SerializedStyles } from '@emotion/serialize'
 import { ReactNode } from 'react'
 
+export type XThemeMode = 'dark' | 'light'
+
 export type XTransitionTime = 'slow' | 'normal' | 'fast' | 'faster'
 
 export type XThemeMixin = (args?: string) => SerializedStyles
@@ -19,6 +21,7 @@ export interface ThemeMixins {
   justifyContent: XThemeMixin
   transform: XThemeMixin
   transition: XThemeMixin
+  transitionProperty: XThemeMixin
 }
 
 export type XThemeColor = 'success' | 'info' | 'error' | 'warning'
@@ -26,7 +29,7 @@ export type XThemeColor = 'success' | 'info' | 'error' | 'warning'
 export interface XThemeFunctions {
   pxToRem: (n: number) => string
   spacing: (n: number[]) => string
-  shadow: (n: unknown) => string
+  shadow: (n: number, inset?: boolean) => string
   transition: (props: string[], time?: XTransitionTime, func?: string) => string
 }
 
@@ -55,6 +58,8 @@ export interface XThemePalette {
 
 declare module '@emotion/react' {
   export interface Theme {
+    mode: XThemeMode
+    changeMode: (mode: XThemeMode) => void
     palette: XThemePalette
     mixins: ThemeMixins
     functions: XThemeFunctions

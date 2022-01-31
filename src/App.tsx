@@ -9,6 +9,7 @@ import {
   XCenter,
   XLanguageMenu,
   XList,
+  XThemeSwitcher,
 } from '~/components'
 import { XThemeProvider } from '~/theme'
 
@@ -18,9 +19,14 @@ const App = () => (
       <Suspense fallback="loading">
         <XCenter>
           <XList gap={10} direction="column">
-            <XLanguageMenu />
-            <SectionButtons />
-            <SectionMenus />
+            <XList gap={10}>
+              <XLanguageMenu />
+              <XThemeSwitcher />
+            </XList>
+            <XList gap={10} direction="column">
+              <SectionButtons />
+              <SectionMenus />
+            </XList>
           </XList>
         </XCenter>
       </Suspense>

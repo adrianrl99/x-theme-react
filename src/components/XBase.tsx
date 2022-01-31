@@ -9,6 +9,10 @@ const XBase = styled.div`
   width: 100vw;
   min-width: 100vw;
 
+  ${props =>
+    props.theme.mixins.transition(props.theme.functions.transition(['all']))}
+  ${props => props.theme.mixins.transitionProperty('background-color, color')}
+
   ${props => props.theme.mixins.displayFlex()}
 
   ${props => props.theme.mixins.boxSizing('border-box')}

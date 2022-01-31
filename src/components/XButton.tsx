@@ -15,7 +15,11 @@ const XButton = styled.button<XButtonProps>`
   font-size: ${props => props.theme.functions.spacing([4])};
   text-transform: uppercase;
   text-align: center;
+  height: 34px;
 
+  ${props => props.theme.mixins.displayFlex()}
+  ${props => props.theme.mixins.justifyContent('center')}
+  ${props => props.theme.mixins.alignItems('center')}
   ${props => props.theme.mixins.boxShadow(props.theme.functions.shadow(0))}
   ${props =>
     props.theme.mixins.transition(

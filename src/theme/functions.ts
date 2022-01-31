@@ -8,8 +8,10 @@ export const functions: XThemeFunctions = {
   spacing: function (n) {
     return n.map(el => this.pxToRem(el * 4)).join(' ')
   },
-  shadow: _ =>
-    '1px 1px 4px 1px rgba(0, 0, 0, 0.25), 3px 3px 12px 3px rgba(0, 0, 0, 0.25)',
+  shadow: (_, inset) =>
+    `${inset ? 'inset' : ''} 1px 1px 4px 1px rgba(0, 0, 0, 0.25), ${
+      inset ? 'inset' : ''
+    } 3px 3px 12px 3px rgba(0, 0, 0, 0.25)`,
   transition: (props, time = 'normal', func = 'ease-in-out') => {
     let result
 
