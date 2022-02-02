@@ -27,7 +27,9 @@ const XMenu = (props: XMenuProps) => {
 
   return (
     <Menu ref={menuRef}>
-      <XButton {...props.buttonProps}>{props.buttonContent}</XButton>
+      <XButton variant="text" {...props.buttonProps}>
+        {props.buttonContent}
+      </XButton>
       <XMenuList ref={menuListRef} {...menuListProps}>
         <XList direction="column" {...props.listProps}>
           {props.items?.map(item => (

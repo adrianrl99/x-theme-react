@@ -1,31 +1,20 @@
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import type { XButtonProps } from '~/typing'
 
 const XButton = styled.button<XButtonProps>`
-  background-color: ${props =>
-    props.color
-      ? props.theme.color[props.color]
-      : props.theme.palette.white.normal};
-  color: ${props => props.theme.palette.white.contrastText};
-
+  background-color: transparent;
   cursor: pointer;
-  padding: ${props => props.theme.functions.spacing([2, 5])};
-  border-radius: ${props => props.theme.functions.spacing([2])};
-  font-size: ${props => props.theme.functions.spacing([4])};
-  text-transform: uppercase;
-  text-align: center;
-  height: 34px;
-
-  ${props => props.theme.mixins.displayFlex()}
-  ${props => props.theme.mixins.justifyContent('center')}
-  ${props => props.theme.mixins.alignItems('center')}
-  ${props => props.theme.mixins.boxShadow(props.theme.functions.shadow(0))}
-  ${props =>
-    props.theme.mixins.transition(
-      props.theme.functions.transition(['transform'], 'fast'),
-    )}
   position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: ${props => props.theme.functions.spacing([2])};
+
+  ${props => props.theme.mixins.alignItems('center')};
+  ${props => props.theme.mixins.displayFlex()};
+  ${props => props.theme.mixins.justifyContent('center')};
 
   &:before {
     content: '';
@@ -34,26 +23,106 @@ const XButton = styled.button<XButtonProps>`
     left: 0;
     right: 0;
     bottom: 0;
+
+    border-radius: ${props => props.theme.functions.spacing([2])};
+
     ${props =>
       props.theme.mixins.transition(
         props.theme.functions.transition(['background-color'], 'fast'),
       )}
   }
 
-  &:hover {
-    ${props => props.theme.mixins.transform('scale(1.08)')}
-    &:before {
-      background-color: rgba(0, 0, 0, 0.15);
-    }
+  &:hover:before {
+    background-color: rgba(0, 0, 0, 0.15);
   }
 
-  &:active {
-    ${props =>
-      props.theme.mixins.transition(
-        props.theme.functions.transition(['transform'], 'faster'),
-      )}
-    ${props => props.theme.mixins.transform('scale(0.95)')}
-  }
+  ${props => {
+    switch (props.size) {
+      case 'small':
+        return css`
+          font-size: ${props.theme.functions.spacing([3.5])};
+          height: ${props.theme.functions.spacing([7])};
+          padding: ${props.theme.functions.spacing([1.5, 4])};
+        `
+      case 'large':
+        return css`
+          font-size: ${props.theme.functions.spacing([4.5])};
+          height: ${props.theme.functions.spacing([9])};
+          padding: ${props.theme.functions.spacing([2.5, 6])};
+        `
+      default:
+        return css`
+          font-size: ${props.theme.functions.spacing([4])};
+          height: ${props.theme.functions.spacing([8])};
+          padding: ${props.theme.functions.spacing([2, 5])};
+        `
+    }
+  }}
+
+  ${props => {
+    switch (props.variant) {
+      case 'text':
+        return css`
+          color: ${props.color
+            ? props.theme.color[props.color]
+            : props.theme.palette.white.normal};
+        `
+      case 'outline':
+        return css`
+          color: ${props.color
+            ? props.theme.color[props.color]
+            : props.theme.palette.white.normal};
+
+          &:before {
+            border: 1px solid
+              ${props.color
+                ? props.theme.color[props.color]
+                : props.theme.palette.white.normal};
+          }
+        `
+      default:
+        return css`
+          color: ${props.theme.palette.white.contrastText};
+          background-color: ${props.color
+            ? props.theme.color[props.color]
+            : props.theme.palette.white.normal};
+
+          ${props.theme.mixins.boxShadow(props.theme.functions.shadow(0))}
+
+          ${((props.animation?.onHover ??
+            props.theme.components?.XButton?.animation?.onHover) ||
+            (props.animation?.onActive ??
+              props.theme.components?.XButton?.animation?.onActive)) &&
+          css`
+            ${props.theme.mixins.transition(
+              props.theme.functions.transition(['transform'], 'fast'),
+            )}
+
+            &:active {
+              ${props.theme.mixins.transition(
+                props.theme.functions.transition(['transform'], 'faster'),
+              )}
+            }
+          `}
+
+          ${(props.animation?.onHover ??
+            props.theme.components?.XButton?.animation?.onHover) &&
+          css`
+            &:hover {
+              ${props.theme.mixins.transform('scale(1.08)')}
+            }
+          `}
+
+          ${(props.animation?.onActive ??
+            props.theme.components?.XButton?.animation?.onActive) &&
+          css`
+            &:active {
+              ${props.theme.mixins.transform('scale(0.95)')}
+            }
+          `}
+        `
+    }
+  }}
 `
 
 export default XButton

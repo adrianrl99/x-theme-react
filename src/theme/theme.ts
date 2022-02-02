@@ -43,6 +43,14 @@ export const baseTheme: Theme = {
     warning: baseDarkPalette.yellow,
     error: baseDarkPalette.red,
   },
+  components: {
+    XButton: {
+      animation: {
+        onHover: true,
+        onActive: true,
+      },
+    },
+  },
 }
 
 export const darkTheme: Theme = {

@@ -1,15 +1,16 @@
 import '~/assets/fonts.css'
 
 import { Global, Theme, ThemeProvider as Provider } from '@emotion/react'
+import type { PropsWithChildren, ReactNode } from 'react'
 import { useLayoutEffect, useMemo, useState } from 'react'
 
-import type { XThemeMode, XThemeProviderProps } from '~/typing'
+import type { XThemeMode } from '~/typing'
 import storage, { STORAGE_KEYS } from '~/utils/storage'
 
 import reset from './reset'
 import { darkTheme, lightTheme } from './theme'
 
-export default function XThemeProvider({ children }: XThemeProviderProps) {
+const XThemeProvider = ({ children }: PropsWithChildren<ReactNode>) => {
   const [mode, setMode] = useState<XThemeMode>('light')
 
   const changeMode = (mode: XThemeMode) => {
@@ -44,3 +45,5 @@ export default function XThemeProvider({ children }: XThemeProviderProps) {
     </Provider>
   )
 }
+
+export default XThemeProvider

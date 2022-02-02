@@ -1,7 +1,8 @@
 import '@emotion/react'
 
 import type { SerializedStyles } from '@emotion/serialize'
-import type { ReactNode } from 'react'
+
+import { XButtonThemeProps } from '~/typing/x-button'
 
 export type XThemeMode = 'dark' | 'light'
 
@@ -56,6 +57,10 @@ export interface XThemePalette {
   cyan: string
 }
 
+export interface XThemeComponentes {
+  XButton?: XButtonThemeProps
+}
+
 declare module '@emotion/react' {
   export interface Theme {
     mode: XThemeMode
@@ -65,9 +70,6 @@ declare module '@emotion/react' {
     functions: XThemeFunctions
     font: XThemeFont
     color: Record<XThemeColor, string>
+    components?: XThemeComponentes
   }
-}
-
-interface XThemeProviderProps {
-  children?: ReactNode
 }
