@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
-import XButton from '~/components/XButton'
-import { XMenuItemProps } from '~/typing'
+import { XButton } from '~/components'
+import type { XMenuItemProps } from '~/typing'
 
 const MenuItem = styled.div`
   text-align: left;

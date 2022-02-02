@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import { XMenu } from '~/components/x-menu'
+import { XMenu } from '~/components'
 import CONFIG from '~/utils/config'
 
 const XLanguageMenu = () => {

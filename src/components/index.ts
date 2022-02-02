@@ -1,5 +1,6 @@
 export * from './sections'
 export * from './x-menu'
+export { default as XAppLoader } from './XAppLoader'
 export { default as XBase } from './XBase'
 export { default as XButton } from './XButton'
 export { default as XCenter } from './XCenter'

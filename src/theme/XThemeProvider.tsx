@@ -3,7 +3,7 @@ import '~/assets/fonts.css'
 import { Global, Theme, ThemeProvider as Provider } from '@emotion/react'
 import { useLayoutEffect, useMemo, useState } from 'react'
 
-import { XThemeMode, XThemeProviderProps } from '~/typing'
+import type { XThemeMode, XThemeProviderProps } from '~/typing'
 import storage, { STORAGE_KEYS } from '~/utils/storage'
 
 import reset from './reset'

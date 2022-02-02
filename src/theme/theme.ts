@@ -1,6 +1,6 @@
 import { Theme } from '@emotion/react'
 
-import { XThemePalette } from '~/typing'
+import type { XThemePalette } from '~/typing'
 
 import { functions } from './functions'
 import { mixins } from './mixins'

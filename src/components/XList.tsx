@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { XListProps } from '~/typing'
+import type { XListProps } from '~/typing'
 
 const XList = styled.div<XListProps>`
   ${props => props.theme.mixins.displayFlex()}

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import { XMenuListProps } from '~/typing/x-menu-list'
+import type { XMenuListProps } from '~/typing/x-menu-list'
 
 const XMenuList = styled.div<XMenuListProps>`
   overflow: hidden;

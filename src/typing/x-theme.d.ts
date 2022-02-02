@@ -1,7 +1,7 @@
 import '@emotion/react'
 
 import type { SerializedStyles } from '@emotion/serialize'
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 export type XThemeMode = 'dark' | 'light'
 

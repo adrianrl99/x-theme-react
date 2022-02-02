@@ -1,8 +1,11 @@
+import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-import { AppLayout } from '~/layouts'
-import { HomePage, NotFoundPage } from '~/pages'
 import ROUTES from '~/routes'
+
+const AppLayout = lazy(() => import('~/layouts/AppLayout'))
+const HomePage = lazy(() => import('~/pages/Home'))
+const NotFoundPage = lazy(() => import('~/pages/errors/NotFound'))
 
 const AppRoutes = () => (
   <Routes>

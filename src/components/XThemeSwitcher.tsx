@@ -1,7 +1,7 @@
 import { useTheme } from '@emotion/react'
 import { ChangeEvent, useMemo } from 'react'
 
-import XSwitch from './XSwitch'
+import { XSwitch } from '~/components'
 
 const XThemeSwitcher = () => {
   const theme = useTheme()

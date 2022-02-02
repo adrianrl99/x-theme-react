@@ -1,4 +1,4 @@
-import { XThemeFunctions } from '~/typing'
+import type { XThemeFunctions } from '~/typing'
 import Logger from '~/utils/logger'
 
 const logger = Logger('/src/theme/functions.ts')

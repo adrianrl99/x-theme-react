@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import { XSwitchProps } from '~/typing'
+import type { XSwitchProps } from '~/typing'
 
 const Label = styled.label`
   position: relative;

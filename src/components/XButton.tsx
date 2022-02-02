@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { XButtonProps } from '~/typing'
+import type { XButtonProps } from '~/typing'
 
 const XButton = styled.button<XButtonProps>`
   background-color: ${props =>

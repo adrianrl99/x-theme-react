@@ -1,4 +1,4 @@
-import { Direction } from '~/typing/types'
+import type { Direction } from './types'
 
 export interface XListProps {
   gap?: number

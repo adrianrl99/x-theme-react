@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { IconPosition } from './types'
+import type { IconPosition } from './types'
 
 export interface XMenuItemProps {
   key: string

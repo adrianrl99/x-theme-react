@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
 
-import { XButtonProps } from './x-button'
-import { XListProps } from './x-list'
-import { XMenuItemProps } from './x-menu-item'
+import type { XButtonProps } from './x-button'
+import type { XListProps } from './x-list'
+import type { XMenuItemProps } from './x-menu-item'
 
 export interface XMenuProps {
   buttonContent?: ReactNode

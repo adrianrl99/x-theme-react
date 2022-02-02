@@ -1,4 +1,6 @@
-import { XThemeColor } from '~/typing/x-theme'
+import type { XThemeColor } from './x-theme'
+
+export type XButtonVariant = 'text' | 'outline' | 'fill'
 
 export interface XButtonProps {
   color?: XThemeColor

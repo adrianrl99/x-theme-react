@@ -1,9 +1,7 @@
-import { useEffect, useRef } from 'react'
+import { PropsWithChildren, ReactNode, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 
-import { XPortalProps } from '~/typing'
-
-const XPortal = (props: XPortalProps) => {
+const XPortal = ({ children }: PropsWithChildren<ReactNode>) => {
   const el = useRef(document.createElement('div'))
   const portal = useRef<HTMLElement | null>()
 
@@ -24,7 +22,7 @@ const XPortal = (props: XPortalProps) => {
     }
   }, [])
 
-  return createPortal(props.children, el.current)
+  return createPortal(children, el.current)
 }
 
 export default XPortal
