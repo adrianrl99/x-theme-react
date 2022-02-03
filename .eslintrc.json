@@ -50,5 +50,5 @@
       }
     ]
   },
-  "ignorePatterns": []
+  "ignorePatterns": ["babel.config.js"]
 }
