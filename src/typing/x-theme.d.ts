@@ -26,6 +26,7 @@ export interface ThemeMixins {
 }
 
 export type XThemeColor = 'success' | 'info' | 'error' | 'warning'
+export type XThemeSize = 'small' | 'normal' | 'large'
 
 export interface XThemeFunctions {
   pxToRem: (n: number) => string
@@ -70,6 +71,7 @@ declare module '@emotion/react' {
     functions: XThemeFunctions
     font: XThemeFont
     color: Record<XThemeColor, string>
+    size: Record<XThemeSize, number>
     components?: XThemeComponentes
   }
 }

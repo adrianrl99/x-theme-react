@@ -10,11 +10,13 @@ const XButton = styled.button<XButtonProps>`
   text-align: center;
   text-transform: uppercase;
 
-  border-radius: ${props => props.theme.functions.spacing([2])};
+  ${props => css`
+    ${props.theme.mixins.alignItems('center')};
+    ${props.theme.mixins.displayFlex()};
+    ${props.theme.mixins.justifyContent('center')};
 
-  ${props => props.theme.mixins.alignItems('center')};
-  ${props => props.theme.mixins.displayFlex()};
-  ${props => props.theme.mixins.justifyContent('center')};
+    border-radius: ${props.theme.functions.spacing([2])};
+  `}
 
   &:before {
     content: '';
@@ -24,36 +26,37 @@ const XButton = styled.button<XButtonProps>`
     right: 0;
     bottom: 0;
 
-    border-radius: ${props => props.theme.functions.spacing([2])};
-
-    ${props =>
-      props.theme.mixins.transition(
+    ${props => css`
+      ${props.theme.mixins.transition(
         props.theme.functions.transition(['background-color'], 'fast'),
-      )}
+      )};
+
+      border-radius: ${props.theme.functions.spacing([2])};
+    `}
   }
 
   &:hover:before {
     background-color: rgba(0, 0, 0, 0.15);
   }
 
+  height: ${props =>
+    props.theme.functions.spacing([props.theme.size[props.size || 'normal']])};
+
   ${props => {
     switch (props.size) {
       case 'small':
         return css`
           font-size: ${props.theme.functions.spacing([3.5])};
-          height: ${props.theme.functions.spacing([7])};
           padding: ${props.theme.functions.spacing([1.5, 4])};
         `
       case 'large':
         return css`
-          font-size: ${props.theme.functions.spacing([4.5])};
-          height: ${props.theme.functions.spacing([9])};
+          font-size: ${props.theme.functions.spacing([5])};
           padding: ${props.theme.functions.spacing([2.5, 6])};
         `
       default:
         return css`
           font-size: ${props.theme.functions.spacing([4])};
-          height: ${props.theme.functions.spacing([8])};
           padding: ${props.theme.functions.spacing([2, 5])};
         `
     }

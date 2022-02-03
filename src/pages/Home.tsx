@@ -1,6 +1,7 @@
 import {
   SectionButtons,
   SectionMenus,
+  SectionSwitches,
   XCenter,
   XLanguageMenu,
   XList,
@@ -17,6 +18,7 @@ const HomePage = () => (
       <XList gap={10} direction="column">
         <SectionButtons />
         <SectionMenus />
+        <SectionSwitches />
       </XList>
     </XList>
   </XCenter>

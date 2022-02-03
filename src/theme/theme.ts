@@ -43,6 +43,11 @@ export const baseTheme: Theme = {
     warning: baseDarkPalette.yellow,
     error: baseDarkPalette.red,
   },
+  size: {
+    small: 7,
+    normal: 8,
+    large: 9,
+  },
   components: {
     XButton: {
       animation: {

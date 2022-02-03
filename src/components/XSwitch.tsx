@@ -1,12 +1,19 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import type { XSwitchProps } from '~/typing'
+import type { XSwitchLabelProps, XSwitchProps } from '~/typing'
 
-const Label = styled.label`
+const Label = styled.label<XSwitchLabelProps>`
   position: relative;
-  width: 60px;
-  height: 34px;
+
+  ${props => css`
+    height: ${props.theme.functions.spacing([
+      props.theme.size[props.size || 'normal'],
+    ])};
+    width: ${props.theme.functions.spacing([
+      props.theme.size[props.size || 'normal'] * 2,
+    ])};
+  `}
 `
 
 const Input = styled.input`
@@ -22,47 +29,63 @@ const Span = styled.span<XSwitchProps>`
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 34px;
+  border-radius: 2rem;
 
-  background-color: ${props => props.theme.palette.white.normal};
+  ${props => css`
+    background-color: ${props.theme.palette.white.normal};
 
-  ${props =>
-    props.theme.mixins.transition(
+    ${props.theme.mixins.transition(
       props.theme.functions.transition(['background-color']),
     )}
-  ${props =>
-    props.theme.mixins.boxShadow(props.theme.functions.shadow(0, true))}
+    ${props.theme.mixins.boxShadow(props.theme.functions.shadow(0, true))}
+  `}
 
   &:before {
     border-radius: 50%;
     position: absolute;
     content: '';
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: ${props => props.theme.palette.white.bright};
+    left: 5px;
+    bottom: 5px;
 
-    ${props => props.theme.mixins.boxShadow(props.theme.functions.shadow(0))}
-    ${props =>
-      props.theme.mixins.transition(
+    ${props => css`
+      background-color: ${props.theme.palette.white.bright};
+      height: calc(
+        ${props.theme.functions.spacing([
+            props.theme.size[props.size || 'normal'],
+          ])} - 10px
+      );
+      width: calc(
+        ${props.theme.functions.spacing([
+            props.theme.size[props.size || 'normal'],
+          ])} - 10px
+      );
+
+      ${props.theme.mixins.boxShadow(props.theme.functions.shadow(0))};
+      ${props.theme.mixins.transition(
         props.theme.functions.transition(['transform']),
       )}
+    `}
   }
 
   ${props =>
     props.checked &&
     css`
-      background-color: ${props.theme.palette.blue};
+      background-color: ${props.color
+        ? props.theme.color[props.color]
+        : props.theme.palette.background};
 
       &:before {
-        ${props.theme.mixins.transform('translateX(26px)')}
+        ${props.theme.mixins.transform(
+          `translateX(${props.theme.functions.spacing([
+            props.theme.size[props.size || 'normal'],
+          ])})`,
+        )}
       }
     `}
 `
 
 const XSwitch = (props: XSwitchProps) => (
-  <Label>
+  <Label size={props.size}>
     <Input type="checkbox" checked={props.checked} onChange={props.onChange} />
     <Span {...props} />
   </Label>

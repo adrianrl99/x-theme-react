@@ -1,12 +1,16 @@
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import type { XListProps } from '~/typing'
 
 const XList = styled.div<XListProps>`
-  ${props => props.theme.mixins.displayFlex()}
-  ${props => props.theme.mixins.flexDirection(props.direction || 'row')}
+  ${props => css`
+    ${props.theme.mixins.displayFlex()};
+    ${props.theme.mixins.flexDirection(props.direction || 'row')};
+    ${props.theme.mixins.justifyContent(props.justifyContent || 'normal')};
 
-  gap: ${props => props.theme.functions.spacing([props.gap || 0])};
+    gap: ${props.theme.functions.spacing([props.gap || 0])};
+  `}
 `
 
 export default XList
