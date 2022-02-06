@@ -38,13 +38,16 @@ describe('x-button', () => {
 
         expect(element).toHaveStyleRule(
           'color',
-          theme.palette.white.contrastText,
+          theme.components.XButton.color.contrastText,
         )
         expect(element).toHaveStyleRule(
           'background-color',
-          color ? theme.color[color] : theme.palette.white.normal,
+          theme.components.XButton.color[color || 'base'],
         )
-        expect(element).toHaveStyleRule('box-shadow', theme.functions.shadow(0))
+        expect(element).toHaveStyleRule(
+          'box-shadow',
+          theme.components.XButton.shadow,
+        )
       })
     })
   })
@@ -65,7 +68,7 @@ describe('x-button', () => {
 
         expect(element).toHaveStyleRule(
           'color',
-          color ? theme.color[color] : theme.palette.white.normal,
+          theme.components.XButton.color[color || 'base'],
         )
         expect(element).toHaveStyleRule('background-color', 'transparent')
       })
@@ -88,7 +91,7 @@ describe('x-button', () => {
 
         expect(element).toHaveStyleRule(
           'color',
-          color ? theme.color[color] : theme.palette.white.normal,
+          theme.components.XButton.color[color || 'base'],
         )
         expect(element).toHaveStyleRule('background-color', 'transparent')
       })

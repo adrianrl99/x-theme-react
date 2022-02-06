@@ -1,4 +1,4 @@
-import type { XThemeColor, XThemeSize } from './x-theme'
+import type { XThemeColor, XThemeSize, XThemeTransition } from './x-theme'
 
 export type XButtonVariant = 'text' | 'outline' | 'fill'
 
@@ -7,13 +7,33 @@ export interface XButtonAnimation {
   onActive?: boolean
 }
 
-export interface XButtonThemeProps {
-  animation?: XButtonAnimation
+export type XButtonThemeSize = {
+  [key in XThemeSize]: {
+    fontSize: number
+    padding: number[]
+    height: number
+  }
 }
 
-export interface XButtonProps extends XButtonThemeProps {
+export interface XButtonThemeTransform {
+  onHover: string
+  onActive: string
+}
+
+export interface XButtonThemeProps {
+  animation: XButtonAnimation
+  borderRadius: number
+  color: Record<XThemeColor | 'base' | 'contrastText', string>
+  shadow: string
+  size: XButtonThemeSize
+  transform: XButtonThemeTransform
+  transition: XThemeTransition
+}
+
+export interface XButtonProps {
   onClick?: () => void
   color?: XThemeColor
   variant?: XButtonVariant
+  animation?: XButtonAnimation
   size?: XThemeSize
 }

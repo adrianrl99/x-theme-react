@@ -25,9 +25,9 @@ exports[`x-button default x-button 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #181a1f;
   background-color: #abb2bf;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
@@ -49,7 +49,7 @@ exports[`x-button default x-button 1`] = `
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -113,9 +113,9 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: er
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #181a1f;
   background-color: #e06c75;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
@@ -137,7 +137,7 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: er
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -202,9 +202,9 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: in
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #181a1f;
   background-color: #61afef;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
@@ -226,7 +226,7 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: in
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -291,9 +291,9 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: su
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #181a1f;
   background-color: #98c379;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
@@ -315,7 +315,7 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: su
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -380,9 +380,9 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: un
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #181a1f;
   background-color: #abb2bf;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
@@ -404,7 +404,7 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: un
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -468,9 +468,9 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: wa
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #181a1f;
   background-color: #d19a66;
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
@@ -492,7 +492,7 @@ exports[`x-button x-button => variant: fill x-button => variant: fill, color: wa
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -557,9 +557,9 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #e06c75;
   background-color: transparent;
 }
@@ -575,7 +575,7 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -619,9 +619,9 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #61afef;
   background-color: transparent;
 }
@@ -637,7 +637,7 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -681,9 +681,9 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #98c379;
   background-color: transparent;
 }
@@ -699,7 +699,7 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -743,9 +743,9 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #abb2bf;
   background-color: transparent;
 }
@@ -761,7 +761,7 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -804,9 +804,9 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #d19a66;
   background-color: transparent;
 }
@@ -822,7 +822,7 @@ exports[`x-button x-button => variant: outline x-button => variant: outline, col
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -866,9 +866,9 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: er
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #e06c75;
   background-color: transparent;
 }
@@ -884,7 +884,7 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: er
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -924,9 +924,9 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: in
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #61afef;
   background-color: transparent;
 }
@@ -942,7 +942,7 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: in
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -982,9 +982,9 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: su
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #98c379;
   background-color: transparent;
 }
@@ -1000,7 +1000,7 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: su
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -1040,9 +1040,9 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: un
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #abb2bf;
   background-color: transparent;
 }
@@ -1058,7 +1058,7 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: un
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {
@@ -1097,9 +1097,9 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: wa
   -webkit-justify-content: center;
   justify-content: center;
   border-radius: 0.5rem;
-  height: 2rem;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
+  height: 2rem;
   color: #d19a66;
   background-color: transparent;
 }
@@ -1115,7 +1115,7 @@ exports[`x-button x-button => variant: text x-button => variant: text, color: wa
   -o-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  border-radius: 0.5rem;
+  border-radius: inherit;
 }
 
 .emotion-0:hover:before {

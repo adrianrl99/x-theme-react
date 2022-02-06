@@ -8,6 +8,15 @@ export type XThemeMode = 'dark' | 'light'
 
 export type XTransitionTime = 'slow' | 'normal' | 'fast' | 'faster'
 
+export type XThemeTransitionOn = 'base' | 'onActive' | 'onHover' | 'onFocus'
+
+export type XThemeTransition = {
+  [key in XThemeTransitionOn]?: {
+    speed: XTransitionTime
+    properties: string[]
+  }
+}
+
 export type XThemeMixin = (args?: string) => SerializedStyles
 
 export interface ThemeMixins {
@@ -59,7 +68,7 @@ export interface XThemePalette {
 }
 
 export interface XThemeComponentes {
-  XButton?: XButtonThemeProps
+  XButton: XButtonThemeProps
 }
 
 declare module '@emotion/react' {
@@ -72,6 +81,6 @@ declare module '@emotion/react' {
     font: XThemeFont
     color: Record<XThemeColor, string>
     size: Record<XThemeSize, number>
-    components?: XThemeComponentes
+    components: XThemeComponentes
   }
 }
