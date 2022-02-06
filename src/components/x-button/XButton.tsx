@@ -4,7 +4,6 @@ import styled from '@emotion/styled'
 import type { XButtonProps } from '~/typing'
 
 const XButton = styled.button<XButtonProps>`
-  background-color: transparent;
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -69,12 +68,14 @@ const XButton = styled.button<XButtonProps>`
           color: ${props.color
             ? props.theme.color[props.color]
             : props.theme.palette.white.normal};
+          background-color: transparent;
         `
       case 'outline':
         return css`
           color: ${props.color
             ? props.theme.color[props.color]
             : props.theme.palette.white.normal};
+          background-color: transparent;
 
           &:before {
             border: 1px solid

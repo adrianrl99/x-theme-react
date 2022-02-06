@@ -1,11 +1,1131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render x-button 1`] = `
-<div>
-  <button
-    class="css-1yjo7i8"
-  >
-    button
-  </button>
-</div>
+exports[`x-button default x-button 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #181a1f;
+  background-color: #abb2bf;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:active {
+  -webkit-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.emotion-0:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<button
+  class="emotion-0"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: fill x-button => variant: fill, color: error 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #181a1f;
+  background-color: #e06c75;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:active {
+  -webkit-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.emotion-0:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<button
+  class="emotion-0"
+  color="error"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: fill x-button => variant: fill, color: info 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #181a1f;
+  background-color: #61afef;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:active {
+  -webkit-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.emotion-0:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<button
+  class="emotion-0"
+  color="info"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: fill x-button => variant: fill, color: success 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #181a1f;
+  background-color: #98c379;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:active {
+  -webkit-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.emotion-0:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<button
+  class="emotion-0"
+  color="success"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: fill x-button => variant: fill, color: undefined 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #181a1f;
+  background-color: #abb2bf;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:active {
+  -webkit-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.emotion-0:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<button
+  class="emotion-0"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: fill x-button => variant: fill, color: warning 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #181a1f;
+  background-color: #d19a66;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25),3px 3px 12px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:active {
+  -webkit-transition: transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.emotion-0:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.emotion-0:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+<button
+  class="emotion-0"
+  color="warning"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: outline x-button => variant: outline, color: error 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #e06c75;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:before {
+  border: 1px solid #e06c75;
+}
+
+<button
+  class="emotion-0"
+  color="error"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: outline x-button => variant: outline, color: info 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #61afef;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:before {
+  border: 1px solid #61afef;
+}
+
+<button
+  class="emotion-0"
+  color="info"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: outline x-button => variant: outline, color: success 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #98c379;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:before {
+  border: 1px solid #98c379;
+}
+
+<button
+  class="emotion-0"
+  color="success"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: outline x-button => variant: outline, color: undefined 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #abb2bf;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:before {
+  border: 1px solid #abb2bf;
+}
+
+<button
+  class="emotion-0"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: outline x-button => variant: outline, color: warning 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #d19a66;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.emotion-0:before {
+  border: 1px solid #d19a66;
+}
+
+<button
+  class="emotion-0"
+  color="warning"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: text x-button => variant: text, color: error 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #e06c75;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+<button
+  class="emotion-0"
+  color="error"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: text x-button => variant: text, color: info 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #61afef;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+<button
+  class="emotion-0"
+  color="info"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: text x-button => variant: text, color: success 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #98c379;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+<button
+  class="emotion-0"
+  color="success"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: text x-button => variant: text, color: undefined 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #abb2bf;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+<button
+  class="emotion-0"
+>
+  button
+</button>
+`;
+
+exports[`x-button x-button => variant: text x-button => variant: text, color: warning 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: #d19a66;
+  background-color: transparent;
+}
+
+.emotion-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.emotion-0:hover:before {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+<button
+  class="emotion-0"
+  color="warning"
+>
+  button
+</button>
 `;
